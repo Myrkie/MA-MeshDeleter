@@ -1,0 +1,11 @@
+﻿{
+  "name": "Myrkur_MeshDeleter_Runtime",
+  "rootNamespace": "",
+  "references": [],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "defineConstraints": [],
+  "optionalUnityReferences": [],
+  "precompiledReferences": [],
+  "allowUnsafeCode": false
+}
