@@ -1,19 +1,20 @@
 ﻿using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using myrkur.dev.ndmf.runtime;
 
 namespace myrkur.dev.ndmf.editor
 {
-    [CustomEditor(typeof(myrkur.dev.ndmf.editor.SkinnedMeshBlendShapeRemoverBehavior))]
+    [CustomEditor(typeof(SkinnedMeshBlendShapeRemoverBehavior))]
     public class SkinnedMeshBlendShapeRemoverEditor : Editor
     {
-        private myrkur.dev.ndmf.editor.SkinnedMeshBlendShapeRemoverBehavior behavior;
+        private SkinnedMeshBlendShapeRemoverBehavior behavior;
         private SkinnedMeshRenderer skinnedMeshRenderer;
         private Mesh originalMesh;
 
         public override void OnInspectorGUI()
         {
-            behavior = (myrkur.dev.ndmf.editor.SkinnedMeshBlendShapeRemoverBehavior)target;
+            behavior = (SkinnedMeshBlendShapeRemoverBehavior)target;
             
             skinnedMeshRenderer = behavior.GetComponent<SkinnedMeshRenderer>();
             if (skinnedMeshRenderer != null)

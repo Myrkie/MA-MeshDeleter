@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace myrkur.dev.ndmf.editor
+namespace myrkur.dev.ndmf.runtime
 {
     public class SkinnedMeshBlendShapeRemoverBehavior : MonoBehaviour
     {
