@@ -15,12 +15,12 @@ namespace myrkur.dev.ndmf.editor
 
         public override string QualifiedName => "myrkur.dev.av3-build-framework.delete blend shape vert's";
         public override string DisplayName => "Dissolve Blend shape Vertices";
-        private static string _version = "";
+        private static string _version = "1.0";
 
         protected override void Configure()
         {
             InPhase(BuildPhase.Generating).Run("Deleting Vertices", DeleteVerts).Then
-                .Run("Remove Skinmesh Remover Component", DestroyComponent);
+                .Run("Remove Skin mesh Remover Component", DestroyComponent);
         }
 
         void DeleteVerts(BuildContext ctx)
