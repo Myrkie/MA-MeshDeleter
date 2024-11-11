@@ -1,19 +1,24 @@
-﻿{
-  "name": "Myrkur_MeshDeleter_Editor",
-  "rootNamespace": "",
-  "references": [
-    "Myrkur_MeshDeleter_Runtime",
-    "nadena.dev.ndmf",
-    "nadena.dev.modular-avatar.core"
-  ],
-  "includePlatforms": [
-    "Editor"
-  ],
-  "excludePlatforms": [],
-  "defineConstraints": [],
-  "optionalUnityReferences": [
-    "UnityEditor"
-  ],
-  "precompiledReferences": [],
-  "allowUnsafeCode": false
+{
+    "name": "Myrkur_MeshDeleter_Editor",
+    "rootNamespace": "",
+    "references": [
+        "Myrkur_MeshDeleter_Runtime",
+        "nadena.dev.ndmf",
+        "nadena.dev.modular-avatar.core",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }
