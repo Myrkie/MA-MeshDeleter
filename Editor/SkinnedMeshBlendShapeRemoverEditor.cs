@@ -4,16 +4,16 @@ using UnityEngine;
 
 namespace myrkur.dev.ndmf.editor
 {
-    [CustomEditor(typeof(SkinnedMeshBlendShapeRemoverBehavior))]
+    [CustomEditor(typeof(myrkur.dev.ndmf.editor.SkinnedMeshBlendShapeRemoverBehavior))]
     public class SkinnedMeshBlendShapeRemoverEditor : Editor
     {
-        private SkinnedMeshBlendShapeRemoverBehavior behavior;
+        private myrkur.dev.ndmf.editor.SkinnedMeshBlendShapeRemoverBehavior behavior;
         private SkinnedMeshRenderer skinnedMeshRenderer;
         private Mesh originalMesh;
 
         public override void OnInspectorGUI()
         {
-            behavior = (SkinnedMeshBlendShapeRemoverBehavior)target;
+            behavior = (myrkur.dev.ndmf.editor.SkinnedMeshBlendShapeRemoverBehavior)target;
             
             skinnedMeshRenderer = behavior.GetComponent<SkinnedMeshRenderer>();
             if (skinnedMeshRenderer != null)
