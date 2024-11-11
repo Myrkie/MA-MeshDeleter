@@ -9,5 +9,8 @@
         "email": "Myrkur@Myrkur.dev",
         "url": "https://github.com/Myrkie"
     },
+    "dependencies": {
+        "nadena.dev.modular-avatar": "*"
+    },
     "url": "https://github.com/Myrkie/MA-MeshDeleter.git"
 }
