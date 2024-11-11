@@ -1,7 +1,7 @@
 {
     "name": "com.myrkur.vrchat.mesh-deleter",
     "displayName": "MA-MeshDeleter",
-    "version": "1.0",
+    "version": "1.0.1",
     "unity": "2022.3",
     "description": "Blendshape Based Non Destructive Mesh Deleter",
     "author": {
@@ -10,7 +10,7 @@
         "url": "https://github.com/Myrkie"
     },
     "dependencies": {
-        "nadena.dev.modular-avatar": "latest"
+        "nadena.dev.modular-avatar": "*"
     },
     "url": "https://github.com/Myrkie/MA-MeshDeleter.git"
 }
