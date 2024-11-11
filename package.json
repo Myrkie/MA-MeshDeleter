@@ -1,9 +1,9 @@
 {
     "name": "com.myrkur.vrchat.mesh-deleter",
     "displayName": "MA-MeshDeleter",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "unity": "2022.3",
-    "description": "Blendshape Based Non Destructive Mesh Deleter",
+    "description": "BlendShape Based Non Destructive Mesh Deleter",
     "author": {
         "name": "Myrkur",
         "email": "Myrkur@Myrkur.dev",
