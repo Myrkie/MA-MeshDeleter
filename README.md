@@ -34,7 +34,7 @@ Mesh Deleter requires Modular Avatar it is a hard requirement, if you wish to us
 Contributions to MeshDeleter are welcome! feel free to submit a pull request or open an issue on this repository.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
 
 ## Acknowledgements
 MA-MeshDeleter utilizes [Modular avatar](https://modular-avatar.nadena.dev/)
