@@ -10,7 +10,7 @@
         "url": "https://github.com/Myrkie"
     },
     "dependencies": {
-        "nadena.dev.modular-avatar": "*"
+        "nadena.dev.modular-avatar": "latest"
     },
     "url": "https://github.com/Myrkie/MA-MeshDeleter.git"
 }
