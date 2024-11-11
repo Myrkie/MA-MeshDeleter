@@ -14,7 +14,7 @@ MA-MeshDeleter is a simple Modular avatar based plugin that will delete the asso
 6. Paste the copied Git URL into the input field.
 7. Click `Add` to import the package into your Unity project.
 
-[UPMGit Extension] is recommended if you wish to seamlessly change versions(https://github.com/mob-sakai/UpmGitExtension)
+[UPMGit Extension](https://github.com/mob-sakai/UpmGitExtension) is recommended if you wish to seamlessly change versions
 
 ### Option 2: Manual Download
 1. Download or clone the source code of this repository.
