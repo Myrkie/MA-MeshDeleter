@@ -12,6 +12,10 @@ namespace myrkur.dev.ndmf.editor
         private SkinnedMeshRenderer skinnedMeshRenderer;
         private Mesh originalMesh;
 
+        private Vector2 scrollPosition;
+
+        private bool isDropdownOpen;
+
         public override void OnInspectorGUI()
         {
             behavior = (SkinnedMeshBlendShapeRemoverBehavior)target;
@@ -40,17 +44,26 @@ namespace myrkur.dev.ndmf.editor
 
             if (blendShapeNames.Count > 0)
             {
-                int selectedIndex = blendShapeNames.IndexOf(behavior.blendShapeName);
-
-                if (selectedIndex == -1)
+                EditorGUILayout.LabelField("Blend Shape Name", EditorStyles.boldLabel);
+                if (GUILayout.Button(behavior.blendShapeName, EditorStyles.popup))
                 {
-                    behavior.blendShapeName = blendShapeNames[0];
-                    selectedIndex = 0;
+                    isDropdownOpen = !isDropdownOpen;
                 }
 
-                selectedIndex = EditorGUILayout.Popup("Blend Shape Name", selectedIndex, blendShapeNames.ToArray());
-
-                behavior.blendShapeName = blendShapeNames[selectedIndex];
+                EditorGUILayout.Separator();
+                if (isDropdownOpen)
+                {
+                    scrollPosition = EditorGUILayout.BeginScrollView(scrollPosition, GUILayout.Height(250));
+                    foreach (var shapeName in blendShapeNames)
+                    {
+                        if (GUILayout.Button(shapeName))
+                        {
+                            behavior.blendShapeName = shapeName;
+                            isDropdownOpen = false;
+                        }
+                    }
+                    EditorGUILayout.EndScrollView();
+                }
             }
             else
             {

@@ -16,7 +16,6 @@ namespace myrkur.dev.ndmf.editor
 
         public override string QualifiedName => "myrkur.dev.av3-build-framework.delete blend shape vert's";
         public override string DisplayName => "Dissolve Blend shape Vertices";
-        private static string _version = "1.0";
 
         protected override void Configure()
         {
